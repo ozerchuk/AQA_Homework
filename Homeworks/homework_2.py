@@ -2,19 +2,31 @@
 
 word = input('Enter your name:')
 name = len(word)
-print('Word \'', word,'\' consists of', name, 'letters')
+result = f'Name {word} consist of {name} letters'
+print(result)
+
+
 
 #Task 2
 
-age = int(input('Enter you age:'))
+age = input('Enter you age! it should be a number:')
 
-if age < 7:
-    print('Where is your parents?')
-elif age < 16 and age > 7:
-    print('It is film for adult')
-elif age > 65 and age < 100:
-    print('Show your pension certificate')
-elif age == 7:
-    print('You are lucky')
+if age.isdigit():
+    age_numeric = int(age)
+    if  age_numeric < 1:
+        print('Less than 1')
+    elif age_numeric > 100:
+        print ('More than 100')
+    elif '7' in age:
+        print('You are lucky')
+    elif age_numeric < 7:
+        print('Where is your parents?')
+    elif age_numeric < 16:
+        print('It is film for adult')
+    elif age_numeric > 65:
+        print('Show your pension certificate')
+    else:
+        print('There are no tickets')
+
 else:
-    print('There are no tickets')
+    print ('There is not a number')
