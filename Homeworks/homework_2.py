@@ -2,8 +2,10 @@
 
 word = input('Enter your name. Input only letters:')
 name = len(word)
-result = f'Name {word} consist of {name} letters'
-print(result)
+if word.isalpha():
+    print(f'Name {word} consist of {name} letters')
+else:
+    print('You should input letters')
 
 
 
@@ -13,14 +15,14 @@ print(result)
 age = input('Enter you age! it should be a number:')
 
 if age.isdigit():
-    if int(age) < 7:
-        print('Where is your parents?')
+    if '7' in age:
+        print('You are lucky')
     elif int(age) < 16:
         print('It is film for adult')
-    elif 65 < int(age) < 100:
+    elif int(age) > 65:
         print('Show your pension certificate')
-    elif '7' in age:
-        print('You are lucky')
+    elif int(age) < 7:
+        print('Where is your parents?')
     else:
         print('There are no tickets')
 else:
