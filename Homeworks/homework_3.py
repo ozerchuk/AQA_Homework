@@ -25,7 +25,7 @@ print('Number of inputted words:', len(words))
 result = 0
 
 for elem in words:
-    if elem.endswith('o'):
+    if elem.endswith(('o', 'O')):
         result += 1
 print(f'Words are ending on letter \'o\'--> {result}')
 
