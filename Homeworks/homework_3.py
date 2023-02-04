@@ -20,12 +20,12 @@ print(f'List with only str data: {list_2}')
 
 # Task 3
 
-words = input('Enter a couple words are ending on letter \'o\':').split(' ')
+words = input('Enter a couple words are ending on letter \'o\' or \'O\':').split(' ')
 print('Number of inputted words:', len(words))
 result = 0
 
 for elem in words:
     if elem.endswith(('o', 'O')):
         result += 1
-print(f'Words are ending on letter \'o\'--> {result}')
+print(f'Words are ending on letter \'o\' or \'O\' --> {result}')
 
