@@ -20,14 +20,12 @@ print(f'List with only str data: {list_2}')
 
 # Task 3
 
-word_1 = input('Enter a couple words are ending on letter \'o\':').split(' ')
-word_2 = input('Click the button on keyboard that corresponds to the letter \'o\':')
-result = []
+words = input('Enter a couple words are ending on letter \'o\':').split(' ')
+print('Number of inputted words:', len(words))
+result = 0
 
-for elem in word_1:
-    elem.lower()
-    if elem.endswith(word_2):
-        result.append(elem)
-
-print(f'Words are ending on letter \'o\'--> {len(result)}')
+for elem in words:
+    if elem.endswith('o'):
+        result += 1
+print(f'Words are ending on letter \'o\'--> {result}')
 
