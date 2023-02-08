@@ -11,7 +11,7 @@ for num in list_2:
         list_1.remove(num)
 print('Updated list', list_1)
 
-# second case (using List Comprehension)
+# second case (using list comprehension)
 list_1 = [11, 77, 4, 22, 0, 56, 5, 95, 7, 5, 87, 13, 45, 67, 44]
 print('Current list', list_1)
 list_1 = [num for num in list_1 if 21 < num < 74]
@@ -20,8 +20,8 @@ print('Updated list', list_1)
 # Task 2
 
 dict = {
-      'cito' : 47.999,
-      'BB_studio':42.999,
+      'cito': 47.999,
+      'BB_studio': 42.999,
       'momo': 49.999,
       'main-service': 37.245,
       'buy.now': 38.324,
