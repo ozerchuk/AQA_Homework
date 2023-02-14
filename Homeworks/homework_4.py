@@ -30,7 +30,6 @@ dict = {
       'store': 37.720,
       'rozetka': 38.003
 }
-
 min_val = min(dict.values())
 print('Minimal price is', min_val)
 max_val = max(dict.values())
