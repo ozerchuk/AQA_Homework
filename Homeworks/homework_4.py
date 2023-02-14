@@ -36,7 +36,7 @@ print('Minimal price is', min_val)
 max_val = max(dict.values())
 print('Maximal price is', max_val)
 
-price = [keys for keys, values in dict.items() if min_val < values < max_val]
+price = [key for key, value in dict.items() if min_val < value < max_val]
 print('The name of stores between min and max price are', price)
 
 
