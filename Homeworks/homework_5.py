@@ -52,16 +52,16 @@ for name, rate in student.items():
     if rate['Середній бал'] > 90:
         top_students.append((name, rate['Середній бал']))
         avg.append(rate['Середній бал'])
-print('Список студентів з середнім балом більше 90:')
+print('List of students with avg rate more than 90:')
 for name, rate in top_students:
     print(name, rate)
 
 sum = sum(avg)
 result = sum/len(avg)
-print('Середній бал у групі', result)
+print('Average rate of all students', result)
 
 for name, phone in student.items():
     if phone['Номер телефону'] is None:
         phone['Номер телефону'] = '+38111111111'
-        print(f"У студента {name} відстутній номер телефону, телефонуйте батькам за таким номером {phone['Номер телефону']}")
+        print(f"Student {name} doesn't have any phone number, please call his parents on {phone['Номер телефону']}")
 
