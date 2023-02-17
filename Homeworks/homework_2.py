@@ -15,9 +15,9 @@ else:
 age = input('Enter you age! it should be a number:')
 
 if age.isdigit():
-    if '7' in age:
+    if '7' in (age):
         print('You are lucky')
-    elif int(age) < 16:
+    elif 7 < int(age) < 16:
         print('It is film for adult')
     elif int(age) > 65:
         print('Show your pension certificate')
