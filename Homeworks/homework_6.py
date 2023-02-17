@@ -1,6 +1,6 @@
 # Task 1
 
-def process_arguments(arg1, arg2):
+def arguments_compare(arg1, arg2):
     if isinstance(arg1, (int, float)) and isinstance(arg2, (int, float)):
         result1 = arg1 * arg2
         print(result1)
@@ -17,9 +17,9 @@ def process_arguments(arg1, arg2):
 
         return result3
 
-process_arguments(10, 2.5)
-process_arguments('Python is ', 'top')
-process_arguments(5, 6)
+arguments_compare(10, 2.5)
+arguments_compare('Python is ', 'top')
+arguments_compare(5, 6)
 
 # Task 2
 
