@@ -19,7 +19,7 @@ def arguments_compare(arg1, arg2):
 
 arguments_compare(10, 2.5)
 arguments_compare('Python is ', 'top')
-arguments_compare(5, 6)
+arguments_compare('age', 22)
 
 # Task 2
 
