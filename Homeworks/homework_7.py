@@ -4,7 +4,7 @@
 def get_season(date_str):
 
     """
-    This function determines the season by date, 
+    Determines the season by date,
     firstly splits the input string date_str into day and month components, 
     converts them to integers, 
     and then checks which season the date belongs to based on the month
@@ -34,7 +34,7 @@ print(season)
 def calculator(arg1, arg2, operation):
 
     """
-    This function checks whether the values of 'arg1' and 'arg2' are integer,
+    Сhecks whether the values of 'arg1' and 'arg2' are integer,
     and also checks whether the passed string 'operation' is a valid operation.
     If these checks are passed, the function executes the appropriate operation and returns the result
     """
