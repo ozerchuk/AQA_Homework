@@ -9,13 +9,13 @@ class Transport:
         print(f'{self.brand} {self.model} has max speed {self.max_speed} km/h')
 
 
-class Car(Transport):
+class Auto(Transport):
     def __init__(self, brand, model, max_speed):
         super().__init__(brand, model)
         self.max_speed = max_speed
 
-car = Car('Mazda','6', 222)
-car.message()
+auto = Auto('Mazda','6', 222)
+auto.message()
 
 
 class Plane(Transport):
@@ -30,7 +30,7 @@ plane = Plane('Airbus', 'A-320', 15000)
 plane.message()
 
 
-class Ship(Transport):
+class CruiseShip(Transport):
     def __init__(self, brand, model, capacity):
         super().__init__(brand, model)
         self.capacity = capacity
@@ -39,6 +39,6 @@ class Ship(Transport):
         print(f'The cruise ship {self.brand} {self.model} can carry {self.capacity} passengers')
 
 
-ship = Ship('STX France', '\'Harmony of the Seas\'', 6500)
+ship = CruiseShip('STX France', '\'Harmony of the Seas\'', 6500)
 ship.message()
 
