@@ -14,7 +14,8 @@ class Auto(Transport):
         super().__init__(brand, model)
         self.max_speed = max_speed
 
-auto = Auto('Mazda','6', 222)
+
+auto = Auto('Mazda', '6', 222)
 auto.message()
 
 
@@ -25,6 +26,7 @@ class Plane(Transport):
 
     def message(self):
         print(f'{self.brand} {self.model} has maximum altitude {self.max_altitude} m')
+
 
 plane = Plane('Airbus', 'A-320', 15000)
 plane.message()
