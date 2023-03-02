@@ -7,40 +7,30 @@ class Point:
         self.x_coord = x_coord
         self.y_coord = y_coord
 
+    @property
+    def x_coord(self):
+        return self.x
 
-@property
-def x_coord(self):
-    return self._x_coord
+    @x_coord.setter
+    def x_coord(self, value):
+        if not isinstance(value, (int, float)):
+            raise TypeError
+        self.x = value
 
+    @property
+    def y_coord(self):
+        return self.y
 
-@x_coord.setter
-def x_coord(self, value):
-    if not isinstance(value, (int, float)):
-        raise TypeError
-    self._x_coord = value
-
-
-@property
-def y_coord(self):
-    return self._y_coord
-
-
-@y_coord.setter
-def y_coord(self, value):
-    if not isinstance(value, (int, float)):
-        raise TypeError
-    self._y_coord = value
+    @y_coord.setter
+    def y_coord(self, value):
+        if not isinstance(value, (int, float)):
+            raise TypeError
+        self.y = value
 
 
-point1 = Point(5, 28)
+point1 = Point(5, 22)
 print(point1.x_coord)
 print(point1.y_coord)
-
-point1.x_coord = 22
-point1.y_coord = 'not a num'  # raise TypeError
-
-print(point1.x_coord)  # output 3
-print(point1.y_coord)  # output 2 (value hasn't changed due to an error)
 
 
 # Task 2
