@@ -6,7 +6,7 @@ def test_phone_brand_negative(phone):
     assert phone.brand == 'SAMSUNG'
 
 
-def test_phone_country_positive(phone):
+def test_phone_country_positiv(phone):
     assert phone.country == 'USA'
 
 
