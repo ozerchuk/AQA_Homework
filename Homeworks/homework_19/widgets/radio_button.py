@@ -2,6 +2,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
+from Homeworks.homework_19.widgets.base_widget import Component
+
 
 class RadioButton:
     def __init__(self, driver: WebDriver, name: str):
