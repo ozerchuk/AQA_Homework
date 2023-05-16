@@ -1,6 +1,6 @@
 import pytest
 
-from Homeworks.Homework_19.pages.TextBoxPage import TextBoxPage
+from Homeworks.homework_19.pages.TextBoxPage import TextBoxPage
 
 
 @pytest.mark.usefixtures('chrome')

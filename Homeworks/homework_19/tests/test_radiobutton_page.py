@@ -1,6 +1,6 @@
 import pytest
 
-from Homeworks.Homework_19.pages.RadiobuttonPage import RadioButtonPage
+from Homeworks.homework_19.pages.RadiobuttonPage import RadioButtonPage
 
 expand_list = ['home', 'desktop', 'documents', 'office', 'downloads']
 marked_list = ['commands', 'general']

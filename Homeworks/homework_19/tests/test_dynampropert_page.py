@@ -3,7 +3,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-from Homeworks.Homework_19.pages.DynamicPropertiesPage import PageDynamicProperties
+from Homeworks.homework_19.pages.DynamicPropertiesPage import PageDynamicProperties
 
 
 @pytest.mark.usefixtures('chrome')

@@ -2,7 +2,7 @@ import time
 
 import pytest
 
-from Homeworks.Homework_19.pages.CheckboxPage import CheckboxPage
+from Homeworks.homework_19.pages.CheckboxPage import CheckboxPage
 
 expand_list = ['home', 'desktop', 'documents', 'office', 'downloads']
 marked_list = ['commands', 'general']

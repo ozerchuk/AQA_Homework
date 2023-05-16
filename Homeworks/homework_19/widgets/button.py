@@ -1,7 +1,7 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Homeworks.Homework_19.widgets.base_widget import Component
+from Homeworks.homework_19.widgets.base_widget import Component
 
 
 class Button(Component):
