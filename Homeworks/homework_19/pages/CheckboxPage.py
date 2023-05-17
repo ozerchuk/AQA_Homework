@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Homeworks.homework_19.widgets.base_widgets import Button
+from Homeworks.homework_19.widget_s.general_widgets import Button
 
 
 class CheckboxPage:
