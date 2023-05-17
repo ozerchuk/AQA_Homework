@@ -1,3 +1,5 @@
+import time
+
 import pytest
 
 from Homeworks.homework_19.pages.TextBoxPage import TextBoxPage
@@ -13,6 +15,7 @@ class TestTextboxPage:
         page.fill_current_address('curr')
         page.fill_permanent_address('per')
         page.click_submit_button()
+        time.sleep(10)
 
     def test_fullname(self):
         name = 'Viktor'

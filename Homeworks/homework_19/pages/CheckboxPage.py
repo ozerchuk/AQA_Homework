@@ -17,7 +17,7 @@ class CheckboxPage:
     def expand_folders(self, *args) -> None:
         for elem in args:
             expanded_folder_button = Button(self.driver, (By.XPATH,
-                                                          f'//label[contains(@for, "tree-node-{elem}")]//ancestor::span/button'))
+                                                              f'//label[contains(@for, "tree-node-{elem}")]//ancestor::span/button'))
             expanded_folder_button.click()
 
     def mark_checkbox(self, *args) -> None:

@@ -21,3 +21,4 @@ class RadioButton:
     def is_selected(self, name: str) -> bool:
         element = self.driver.find_element(self.by, self.loc)
         return element.is_selected()
+

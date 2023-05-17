@@ -1,3 +1,5 @@
+import time
+
 import pytest
 
 from Homeworks.homework_19.pages.RadioButtonPage import RadioButtonPage
@@ -9,6 +11,7 @@ class TestRadiobuttonPage:
         page = RadioButtonPage(self.driver)
         page.open()
         page.activate_yes_button('yes')
+
 
 
 
