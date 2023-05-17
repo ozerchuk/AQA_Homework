@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Homeworks.homework_19.page_widgets.general import Button
+from Homeworks.homework_20.widgets_.general_widgets import Button
 
 
 class RadioButtonPage:
