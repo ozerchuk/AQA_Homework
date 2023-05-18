@@ -38,6 +38,7 @@ class PageDynamicProperties:
 
     def button_color_changed(self) -> WebElement:
         button = self.driver.find_element(*self.color_changed_button_loc)
-        WebDriverWait(self.driver, 6).until(ec.text_to_be_present_in_element_attribute(self.color_changed_button_loc,
-                                                                                       *self.color_changed_button_attribute_loc))
+        wait = WebDriverWait(self.driver, 6)
+        wait.until(ec.text_to_be_present_in_element_attribute(self.color_changed_button_loc,
+                                                              *self.color_changed_button_attribute_loc))
         return button
