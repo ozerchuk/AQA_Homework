@@ -21,7 +21,7 @@ class PageDynamicProperties:
         self.disabled_enabled_button_loc = (By.CSS_SELECTOR, 'button#enableAfter')
         self.invisible_visible_button_loc = (By.CSS_SELECTOR, 'button#visibleAfter')
         self.color_changed_button_loc = (By.CSS_SELECTOR, 'button#colorChange')
-        self.color_changed_button_attribute_loc = ('class', 'text-danger btn btn-primary')
+        self.color_changed_button_attribute_loc = ('class', 'mt-4 text-danger btn btn-primary')
 
     def open(self) -> 'PageDynamicProperties':
         self.driver.get(self.URL)
